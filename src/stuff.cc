@@ -3,6 +3,7 @@
 
 void Stuff::render()
 {
-    glColor3f(0.1f, 0.1f, 0.1f);
-    glutWireTeapot(1.f);
+    glTranslatef(0.f, 0.75f, 0.0f);
+
+    glutSolidTeapot(1.f);
 }
