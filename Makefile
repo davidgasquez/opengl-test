@@ -1,6 +1,6 @@
 #MAKEFILE
 
-all: obj/lib/libply.a bin/Test
+all: folders obj/lib/libply.a bin/Test
 
 bin/Test: obj/main.o obj/scene.o obj/camera.o obj/axis.o obj/stuff.o
 	g++ $^ -o $@ -Lobj/lib -lGL -lglut -lGLU -lply
@@ -28,7 +28,8 @@ obj/axis.o: src/axis.cc
 obj/stuff.o: src/stuff.cc 
 	g++ -Werror -Wall -g -Iinclude -Ilib/ply -c $< -o $@ 
 
-
+folders:
+	mkdir -p bin obj obj/lib
 
 clear: 
 	rm obj/*.o obj/lib/*.o bin/*
