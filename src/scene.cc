@@ -30,7 +30,7 @@ void Scene::render()
     glEnable(GL_LIGHTING);
     glEnable(GL_LIGHT0);
 
-    vec3 lightColor = vec3(1.f, 1.f, 1.0f);
+    vec3 lightColor(1.f, 1.f, 1.0f);
     glLightfv(GL_LIGHT0, GL_POSITION, &lightColor[0]);
 
     stuff.render();

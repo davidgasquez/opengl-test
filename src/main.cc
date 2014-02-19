@@ -51,7 +51,7 @@ int main(int argc, char *argv[])
     glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE | GLUT_DEPTH);
     glutInitWindowPosition( 250, 100);
     glutInitWindowSize(1020, 600);  // Tamaño de la ventana (ancho y alto)
-    glutCreateWindow("Practica 1");
+    glutCreateWindow("Test");
 
     glutReshapeFunc(Reshape);   //Asigna la función para que cuando cambie el tamaño de la ventana, la pueda llamar.
     glutDisplayFunc(DrawScene); //Asigna de la funcion llamada "dibujar" al evento de dibujo.
