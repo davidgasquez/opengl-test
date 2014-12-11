@@ -1,10 +1,13 @@
 OpenGL-Test
 ===========
+Simple program to draw a Teapot using OpenGL and C++.
 
-####Learning OpenGL
+Compile with `make`.
+
+####Keys
 
 · __AvPag__: Zoom In
 
 · __RePag__: Zoom Out
 
-· __Direction keys__: Model Rotation
+· __Direction keys__: Rotate Model

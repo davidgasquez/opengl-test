@@ -5,19 +5,18 @@
 #include "camera.h"
 #include "stuff.h"
 
-class Scene
-{
+class Scene {
 public:
-    static Scene *getInstance();
-    void project();
-    void render();
-    void keys(int key);
+  static Scene *getInstance();
+  void project();
+  void render();
+  void keys(int key);
 
 private:
-    Scene();
-    Axis axis;
-    Camera camera;
-    Stuff stuff;
+  Scene();
+  Axis axis;
+  Camera camera;
+  Stuff stuff;
 };
 
 #endif

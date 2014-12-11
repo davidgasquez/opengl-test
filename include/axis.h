@@ -1,9 +1,9 @@
 #ifndef AXIS_H__
 #define AXIS_H__ value
 
-class Axis
-{
+class Axis {
 public:
-    void render();
+  void render();
 };
+
 #endif
